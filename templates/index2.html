@@ -1,0 +1,100 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHURN PREDICTION</title>
+
+    <style>
+        body {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQruHj9T6kjbqbT3gyYCv95D1uYMYv1PoaHg&usqp=CAU);
+        background-repeat:no-repeat;
+        background-size:cover;
+        }
+    </style>
+</head>
+<body style="font-size: x-large;">
+<center>
+    <h1>CHURN PREDICTION</h1>
+</center>
+    <form action="/get_data" method="post">
+        <center>
+        <label>Tenure:</label> <input type='number' step="0.01"  name = 'html_Tenure' > <br><br>
+        
+        <label>PreferredLoginDevice:</label> 
+        <select name="html_color">
+            
+            <option value="'Mobile Phone'">'Mobile Phone'</option>
+            <option value="Computer">Computer</option>
+            <option value="Phone">Phone</option>
+        </select> <br><br>
+           
+        <label>CityTier:</label> <input type='number' step="0.01"  name = 'html_CityTier' > <br><br> 
+        
+        <label>WarehouseToHome:</label> <input type='number' step="0.01"  name = 'html_WarehouseToHome' > <br><br> 
+            
+        
+        <label>PreferredPaymentMode:</label> 
+        <select name="html_PreferredPaymentMode">
+            <option value="'Debit Card'">Debit Card</option>
+            <option value='Credit Card'>Credit Card</option>
+            <option value="E wallet">E wallet</option>
+            <option value='UPI'>UPI</option>
+            <option value='Cash on Delivery'>Cash on Delivery</option>
+           
+        </select> <br><br>
+
+        <label>Gender:</label> 
+        <select name="html_Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+
+        </select> <br><br>
+        
+        <label>HourSpendOnApp:</label> <input type='number' step="0.01"  name = 'html_HourSpendOnApp' > <br><br>
+
+        <label>NumberOfDeviceRegistered:</label> <input type='number' step="0.01"  name = 'html_NumberOfDeviceRegistered'> <br><br>
+        
+        <label>SatisfactionScore:</label> <input type='number' step="0.01"  name = 'html_SatisfactionScore'> <br><br>
+
+        <label>MaritalStatus: </label>
+        <select name="html_MaritalStatus">
+            <option value="Married">Married</option>
+            <option value="Single">Single</option>
+            <option value="Divorced">Divorced</option>
+            
+        </select> <br><br>
+        
+        
+        <label>NumberOfAddress:</label> <input type = 'number' step = '0.001' name = "html_NumberOfAddress"> <br><br>
+        <label>Complain:</label> <input type = "number" step = '0.001' name = 'html_Complain'> <br><br>
+        <label>OrderAmountHikeFromlastYear:</label> <input type = "number" step = '0.001' name = "html_OrderAmountHikeFromlastYear"> <br><br>
+        <label>CouponUsed:</label> <input type = "number" step = '0.001' name = "html_CouponUsed"> <br><br>
+        <label>OrderCount:</label> <input type = "number" step = '0.001' name = "html_OrderCount"> <br><br>
+        <label>DaySinceLastOrder:</label> <input type = "number" step = '0.001' name = "html_DaySinceLastOrder"> <br><br>
+        <label>CashbackAmount:</label> <input type = "number" step = '0.001' name = "html_CashbackAmount"> <br><br>
+
+        
+        <label>PreferedOrderCat:</label> 
+        <select name="html_PreferedOrderCat">
+            <option value='Laptop & Accessory'>Laptop & Accessory</option>
+            <option value='Mobile'>Mobile</option>
+            <option value='Fashion'>Fashion</option>
+            <option value='Grocery'>Grocery</option>
+            <option value='Others'>Others</option>
+
+
+
+           
+        </select> <br><br>
+            
+        </select> <br>
+
+        <input type="submit" value="CUSTOMER CHURN PREDICTION">
+    </form><br><br>
+
+
+    <label>CUSTOMER CHURN PREDICTION: </label>{{prediction}}
+    <p>He/She is still your customer.</p>
+    </center>
+</body>
+</html>
